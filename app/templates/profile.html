@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block main %}
+<div class="card text-center">
+  <div class="card-header">
+    <img src="{{ url_for("static", filename= 'img/Avatar.png') }}" alt=""
+    class="avatar" />
+    <h2>Orlando Blagrove</h2>
+    <p>@landocodes</p>
+    <p>kingston, Jamaica</p>
+    <p>{{joined_date}}</p>
+  </div>
+  <div class="card-body py-3">
+    <p class="">
+      I'm deeply passionate about technology and coding, particularly in web
+      development, where I enjoy crafting digital experiences and bringing ideas
+      to life through innovative solutions.
+    </p>
+    <div class="profile-stats pb-3">
+      <div class="stat">
+        <div class="stat-count">1,450</div>
+        <div class="stat-label text-muted">Posts</div>
+      </div>
+      <div class="stat">
+        <div class="stat-count">632</div>
+        <div class="stat-label text-muted">Following</div>
+      </div>
+      <div class="stat">
+        <div class="stat-count">125K</div>
+        <div class="stat-label text-muted">Followers</div>
+      </div>
+    </div>
+    <a href="#" type="button" class="btn col-4">Follow</a>
+  </div>
+</div>
+
+{% endblock %}
